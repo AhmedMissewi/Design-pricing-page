@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#FF6768;
+    --secondary-color: #263859;
+    --tertiary-color: #6B778D;
+    --light-color: #fafafa;
+    --dark-color: #191A19;
+}
+
+body{
+    font-family: "Roboto", sans-Serif;
+    background-color: var(--tertiary-color);
+    text-align:center;
+}
+
+.pricing-container{
+    display: flex;
+    max-width: 900px;
+    /*justify-content: center;*/
+    margin:auto;
+}
+
+.pricing{
+    background-color: var(--secondary-color);
+    border:1px solid var(--light-color);
+    margin:10px;
+    padding: 0px 20px;
+}
+
+.pricing h4{
+    color:var(--light-color);
+    /* margin:top right_left bottom;*/
+    margin:20px 0 0;
+}
+
+.pricing h2{
+    color:var(--primary-color);
+    margin-top: 30px;
+    display: inline-block;
+    font-size:30px;
+}
+
+.pricing .period{
+    color:var(--tertiary-color);
+    font-size:12px;
+} 
+
+.pricing .details{
+    text-decoration: none;
+    color:var(--light-color);
+    /*visibility: hidden;*/
+    display: none;
+    margin:20px;
+}
+.pricing ul{
+    list-style-type: none;
+    margin:20px 0;
+}
+
+.pricing ul li{
+    margin:20px 30px;
+    color:var(--tertiary-color);
+}
+
+.pricing button{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.pricing:hover{
+    box-shadow:0 0 30px 10px rgba(0, 0, 0, 0.4) ;
+    border-top-color: var(--primary-color);
+}
+
+
+.pricing button:hover{
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+@media screen and (max-width:700px){
+    .pricing-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing{
+        width:80%;/*80wv*/
+    }
+    
+    .pricing ul{
+        display: none;
+    }
+    .pricing .details{
+        display:block;
+    }
+    .pricing h2{
+        display:block;
+    }
+}
+
+
+
+
+
